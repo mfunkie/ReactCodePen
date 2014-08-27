@@ -2,7 +2,7 @@
   function runScripts() {
     var bodyScripts = 'body script:not([src])';
     Array.prototype.forEach.call(document.querySelectorAll(bodyScripts), function setJSXType(element) {
-      element.setAttribute('type', 'text/jsx');    
+      element.setAttribute('type', 'text/jsx;harmony=true');    
     });
   };
 
